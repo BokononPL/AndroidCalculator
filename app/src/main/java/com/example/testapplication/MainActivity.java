@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button xDbutton;
     private Button simplebutton;
+    private Button advancedbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         xDbutton = findViewById(R.id.xDbutton);
         simplebutton = findViewById(R.id.simplebutton);
+        advancedbutton = findViewById(R.id.advancedbutton);
 
         xDbutton.setOnClickListener(v -> {
             Context context = getApplicationContext();
@@ -28,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
 
         simplebutton.setOnClickListener(v -> {
             Intent nextScreen = new Intent(getApplicationContext(), SimpleActivity.class);
+            startActivity(nextScreen);
+        });
+
+        advancedbutton.setOnClickListener(v -> {
+            Intent nextScreen = new Intent(getApplicationContext(), AdvancedActivity.class);
             startActivity(nextScreen);
         });
 

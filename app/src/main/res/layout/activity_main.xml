@@ -23,9 +23,9 @@
         android:id="@+id/simplebutton"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="70dp"
         android:text="SIMPLE"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,15 +33,30 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
+        android:id="@+id/advancedbutton"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:text="ADVANCED"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simplebutton" />
+
+    <Button
         android:id="@+id/xDbutton"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="70dp"
         android:text="XD"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simplebutton" />
+        app:layout_constraintTop_toBottomOf="@+id/advancedbutton" />
 </android.support.constraint.ConstraintLayout>
