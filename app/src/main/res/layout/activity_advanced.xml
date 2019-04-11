@@ -229,7 +229,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorAdvancedOp"
-                android:text="sin" />
+                android:text="sin"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/cosbutton"
@@ -237,7 +238,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorAdvancedOp"
-                android:text="cos" />
+                android:text="cos"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/tanbutton"
@@ -245,21 +247,24 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorAdvancedOp"
-                android:text="tan" />
+                android:text="tan"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/openbracebutton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="(" />
+                android:text="("
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/closebracebutton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text=")" />
+                android:text=")"
+                android:textSize="36sp" />
 
         </TableRow>
 
@@ -274,7 +279,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorAdvancedOp"
-                android:text="^" />
+                android:text="^"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/sqrtbutton"
@@ -282,7 +288,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorAdvancedOp"
-                android:text="sqrt" />
+                android:text="sqrt"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/lnbutton"
@@ -290,7 +297,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorAdvancedOp"
-                android:text="ln" />
+                android:text="ln"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/pibutton"
@@ -298,7 +306,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorAdvancedOp"
-                android:text="pi" />
+                android:text="pi"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/factbutton"
@@ -306,7 +315,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorAdvancedOp"
-                android:text="!" />
+                android:text="!"
+                android:textSize="36sp" />
         </TableRow>
     </TableLayout>
 

@@ -61,7 +61,7 @@ public class AdvancedActivity extends AppCompatActivity {
             updateCalcText();
         }
         else {
-            calcTextView.setText("Hello World");
+            calcTextView.setText("0");
         }
 
         eqlbutton.setOnClickListener(v -> {

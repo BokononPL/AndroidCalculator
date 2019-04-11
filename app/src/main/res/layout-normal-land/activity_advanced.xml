@@ -14,7 +14,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="TextView"
-        android:textSize="48sp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,8 +32,8 @@
         app:layout_constraintTop_toBottomOf="@+id/calcTextView">
 
         <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1">
 
             <Button
@@ -42,7 +42,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="BKSP"
-                android:textSize="30sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/clrbutton"
@@ -50,16 +50,34 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="CLEAR"
-                android:textSize="30sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/eqlbutton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
+                android:paddingTop="2dp"
                 android:text="="
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
+            <Button
+                android:id="@+id/openbracebutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="2dp"
+                android:text="("
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/closebracebutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="2dp"
+                android:text=")"
+                android:textSize="28sp" />
         </TableRow>
 
         <TableRow
@@ -73,8 +91,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorNumbers"
+                android:paddingTop="4dp"
                 android:text="7"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/button8"
@@ -83,7 +102,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorNumbers"
                 android:text="8"
-                android:textSize="44sp" />
+                android:textSize="28sp"
+                android:paddingTop="2dp" />
 
             <Button
                 android:id="@+id/button9"
@@ -91,8 +111,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorNumbers"
+                android:paddingTop="2dp"
                 android:text="9"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/addbutton"
@@ -100,8 +121,27 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorBasicOp"
+                android:paddingTop="2dp"
                 android:text="+"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/sinbutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAdvancedOp"
+                android:text="sin"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cosbutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAdvancedOp"
+                android:text="cos"
+                android:textSize="18sp" />
 
         </TableRow>
 
@@ -116,8 +156,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorNumbers"
+                android:paddingTop="2dp"
                 android:text="4"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/button5"
@@ -125,8 +166,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorNumbers"
+                android:paddingTop="2dp"
                 android:text="5"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/button6"
@@ -134,8 +176,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorNumbers"
+                android:paddingTop="2dp"
                 android:text="6"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/subbutton"
@@ -143,8 +186,27 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorBasicOp"
+                android:paddingTop="2dp"
                 android:text="-"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/tanbutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAdvancedOp"
+                android:text="tan"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/pibutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAdvancedOp"
+                android:text="pi"
+                android:textSize="18sp" />
 
         </TableRow>
 
@@ -159,8 +221,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorNumbers"
+                android:paddingTop="2dp"
                 android:text="1"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/button2"
@@ -168,8 +231,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorNumbers"
+                android:paddingTop="2dp"
                 android:text="2"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/button3"
@@ -177,8 +241,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorNumbers"
+                android:paddingTop="2dp"
                 android:text="3"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/mulbutton"
@@ -186,8 +251,28 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorBasicOp"
+                android:paddingTop="2dp"
                 android:text="*"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/lnbutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAdvancedOp"
+                android:text="ln"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/factbutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAdvancedOp"
+                android:paddingTop="2dp"
+                android:text="!"
+                android:textSize="28sp" />
 
         </TableRow>
 
@@ -202,8 +287,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:backgroundTint="@color/colorNumbers"
+                android:paddingTop="2dp"
                 android:text="0"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/dotbutton"
@@ -211,8 +297,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorNumbers"
+                android:paddingTop="2dp"
                 android:text="."
-                android:textSize="44sp" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/divbutton"
@@ -220,10 +307,31 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorBasicOp"
+                android:paddingTop="2dp"
                 android:text="/"
-                android:textSize="44sp" />
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/powerbutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAdvancedOp"
+                android:paddingTop="2dp"
+                android:text="^"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/sqrtbutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAdvancedOp"
+                android:text="sqrt"
+                android:textSize="18sp" />
 
         </TableRow>
+
     </TableLayout>
 
 </android.support.constraint.ConstraintLayout>
