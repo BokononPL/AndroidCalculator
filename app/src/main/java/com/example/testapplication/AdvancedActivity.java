@@ -26,7 +26,7 @@ public class AdvancedActivity extends AppCompatActivity {
             R.id.button4, R.id.button5, R.id.button6, R.id.button7,
             R.id.button8, R.id.button9, R.id.addbutton, R.id.subbutton,
             R.id.mulbutton, R.id.divbutton, R.id.dotbutton, R.id.sinbutton,
-            R.id.cosbutton, R.id.tanbutton, R.id.pibutton, R.id.factbutton,
+            R.id.cosbutton, R.id.tanbutton, R.id.pibutton, R.id.ebutton,
             R.id.openbracebutton, R.id.closebracebutton, R.id.powerbutton, R.id.sqrtbutton,
             R.id.lnbutton
     );

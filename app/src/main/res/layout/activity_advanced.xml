@@ -310,13 +310,13 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/factbutton"
+                android:id="@+id/ebutton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorAdvancedOp"
-                android:text="!"
-                android:textSize="36sp" />
+                android:text="e"
+                android:textSize="18sp" />
         </TableRow>
     </TableLayout>
 
