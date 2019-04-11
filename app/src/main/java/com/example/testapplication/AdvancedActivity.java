@@ -25,7 +25,10 @@ public class AdvancedActivity extends AppCompatActivity {
             R.id.button0, R.id.button1, R.id.button2, R.id.button3,
             R.id.button4, R.id.button5, R.id.button6, R.id.button7,
             R.id.button8, R.id.button9, R.id.addbutton, R.id.subbutton,
-            R.id.mulbutton, R.id.divbutton, R.id.dotbutton
+            R.id.mulbutton, R.id.divbutton, R.id.dotbutton, R.id.sinbutton,
+            R.id.cosbutton, R.id.tanbutton, R.id.pibutton, R.id.factbutton,
+            R.id.openbracebutton, R.id.closebracebutton, R.id.powerbutton, R.id.sqrtbutton,
+            R.id.lnbutton
     );
 
     List<String> expression = new ArrayList<>();
@@ -42,7 +45,7 @@ public class AdvancedActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple);
+        setContentView(R.layout.activity_advanced);
         /*Log.i("xD", "onCreate");*/
         for (int id : buttonIds) {
             initButtonHandler(id);
