@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button exitbutton;
     private Button simplebutton;
     private Button advancedbutton;
+    private Button aboutbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         exitbutton = findViewById(R.id.exitbutton);
         simplebutton = findViewById(R.id.simplebutton);
         advancedbutton = findViewById(R.id.advancedbutton);
+        aboutbutton = findViewById(R.id.aboutbutton);
 
         exitbutton.setOnClickListener(v -> {
             Intent homeIntent = new Intent(Intent.ACTION_MAIN);
@@ -36,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
         advancedbutton.setOnClickListener(v -> {
             Intent nextScreen = new Intent(getApplicationContext(), AdvancedActivity.class);
+            startActivity(nextScreen);
+        });
+
+        aboutbutton.setOnClickListener(v -> {
+            Intent nextScreen = new Intent(getApplicationContext(), AboutActivity.class);
             startActivity(nextScreen);
         });
 
