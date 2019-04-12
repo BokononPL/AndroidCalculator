@@ -47,13 +47,13 @@
         app:layout_constraintTop_toBottomOf="@+id/simplebutton" />
 
     <Button
-        android:id="@+id/xDbutton"
+        android:id="@+id/exitbutton"
         android:layout_width="0dp"
         android:layout_height="120dp"
         android:layout_marginStart="120dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="120dp"
-        android:text="XD"
+        android:text="exit"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

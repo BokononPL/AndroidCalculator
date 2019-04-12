@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button xDbutton;
+    private Button exitbutton;
     private Button simplebutton;
     private Button advancedbutton;
 
@@ -18,14 +18,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         super.onCreate(savedInstanceState);
 
-        xDbutton = findViewById(R.id.xDbutton);
+        exitbutton = findViewById(R.id.exitbutton);
         simplebutton = findViewById(R.id.simplebutton);
         advancedbutton = findViewById(R.id.advancedbutton);
 
-        xDbutton.setOnClickListener(v -> {
-            Context context = getApplicationContext();
-            Toast toast = Toast.makeText(context, "xD", Toast.LENGTH_SHORT);
-            toast.show();
+        exitbutton.setOnClickListener(v -> {
+            Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+            homeIntent.addCategory( Intent.CATEGORY_HOME );
+            homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(homeIntent);
         });
 
         simplebutton.setOnClickListener(v -> {
