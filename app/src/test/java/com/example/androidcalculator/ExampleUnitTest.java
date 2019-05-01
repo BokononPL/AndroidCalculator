@@ -1,4 +1,4 @@
-package com.example.testapplication;
+package com.example.androidcalculator;
 
 import org.junit.Test;
 

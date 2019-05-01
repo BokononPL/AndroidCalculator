@@ -1,4 +1,4 @@
-package com.example.testapplication;
+package com.example.androidcalculator;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

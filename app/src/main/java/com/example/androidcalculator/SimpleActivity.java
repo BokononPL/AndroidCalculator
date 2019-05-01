@@ -1,9 +1,7 @@
-package com.example.testapplication;
+package com.example.androidcalculator;
 
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class AdvancedActivity extends AppCompatActivity {
+public class SimpleActivity extends AppCompatActivity {
 
     private TextView calcTextView;
     private Button eqlbutton;
@@ -25,10 +23,7 @@ public class AdvancedActivity extends AppCompatActivity {
             R.id.button0, R.id.button1, R.id.button2, R.id.button3,
             R.id.button4, R.id.button5, R.id.button6, R.id.button7,
             R.id.button8, R.id.button9, R.id.addbutton, R.id.subbutton,
-            R.id.mulbutton, R.id.divbutton, R.id.dotbutton, R.id.sinbutton,
-            R.id.cosbutton, R.id.tanbutton, R.id.pibutton, R.id.ebutton,
-            R.id.openbracebutton, R.id.closebracebutton, R.id.powerbutton, R.id.sqrtbutton,
-            R.id.lnbutton
+            R.id.mulbutton, R.id.divbutton, R.id.dotbutton
     );
 
     List<String> expression = new ArrayList<>();
@@ -45,7 +40,7 @@ public class AdvancedActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_advanced);
+        setContentView(R.layout.activity_simple);
         /*Log.i("xD", "onCreate");*/
         for (int id : buttonIds) {
             initButtonHandler(id);
@@ -119,6 +114,4 @@ public class AdvancedActivity extends AppCompatActivity {
         }
         calcTextView.setText(string);
     }
-
-
 }
